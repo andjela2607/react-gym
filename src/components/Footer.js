@@ -1,9 +1,20 @@
-import React from 'react'
+import React from 'react';
+import { Box, Stack } from '@mui/material';
 
-const Footer = () => {
-  return (
-    <div>Footer</div>
-  )
-}
+import Logo from '../assets/images/Logo.png';
 
-export default Footer
+const Footer = () => (
+  <Box mt='80px' bgcolor='#FFF3F4'>
+    <Stack
+      gap='40px'
+      sx={{ alignItems: 'center' }}
+      flexWrap='wrap'
+      px='40px'
+      py='24px'
+    >
+      <img src={Logo} alt='logo' style={{ width: '42px', height: '42px' }} />
+    </Stack>
+  </Box>
+);
+
+export default Footer;
